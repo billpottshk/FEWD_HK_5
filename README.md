@@ -1,4 +1,4 @@
 FEWD_HK_5
 =========
 
-Mart's FEWD class
+Mart and Kit's FEWD class
