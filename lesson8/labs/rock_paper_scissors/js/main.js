@@ -8,23 +8,30 @@ var humanScore;
 var computerScore;
 
 if (botChoice<0.34) {
-   botChoice="rock";  
+  botChoice="rock";  
 } else if (botChoice<= 0.67){
   botChoice="paper";
-} else{
+} else {
   botChoice="scissors";
 }
 
 document.getElementById("rock").onclick=compareRock;
 
 function compareRock() {
-if (botChoice=scissors) {
+
+// Kit: Try to use console.log() to view the value of a variable on a particular moment
+console.log(botChoice);
+
+// Kit: Are u doing a comparison here or assignment below?
+if (botChoice=scissors) { 
   // get the human score
   humanScore = parseInt(document.getElementById('humanScore').innerHTML);
   document.getElementById('humanScore').innerHTML = humanScore + 1;
-} else if (botChoice=paper){
+} else if (botChoice=paper){ // Kit: Are u doing a comparison here or assignment?
+  // Try to apply the same logic as the "botChoice=scissors" case
   document.getElementById("computerScore").innerHTML=computerScore + 1;
 } else if (botChoice == rock){
+  // Try to apply the same logic as the "botChoice=scissors" case
   document.getElementById("humanScore").innerHTML = "computerScore" + 0;
   document.getElementById("computerScore").innerHTML = "computerScore" + 0;
 }
